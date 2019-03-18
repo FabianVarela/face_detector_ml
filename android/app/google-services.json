@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "347175011803",
+    "firebase_url": "https://board-flutter.firebaseio.com",
+    "project_id": "board-flutter",
+    "storage_bucket": "board-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347175011803:android:0de3d8786f6d39fb",
+        "android_client_info": {
+          "package_name": "com.developer.fabian.face_detector_ml"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347175011803-dfif2qq4p8tusn101scj3dm8dec6pat0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.fabian.face_detector_ml",
+            "certificate_hash": "785b370ff0ccb1ba22f124608e9209d24aa874fd"
+          }
+        },
+        {
+          "client_id": "347175011803-67t6g1rju4ju8l5if0jdfp1c7hipdbqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Y46qxeFGPyE6lqN4RWNTG0RKCMZe1u8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347175011803-67t6g1rju4ju8l5if0jdfp1c7hipdbqe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "347175011803-rcnrr7734h44eqnhrf2r1vb0puhtkcm1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.developer.fabian.postBoard"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347175011803:android:67cd02191ff7f377",
+        "android_client_info": {
+          "package_name": "com.developer.fabian.post_board"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347175011803-7okcg2bvvkkpct9hrdqemgd4lek5dvqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.fabian.post_board",
+            "certificate_hash": "785b370ff0ccb1ba22f124608e9209d24aa874fd"
+          }
+        },
+        {
+          "client_id": "347175011803-67t6g1rju4ju8l5if0jdfp1c7hipdbqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Y46qxeFGPyE6lqN4RWNTG0RKCMZe1u8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347175011803-67t6g1rju4ju8l5if0jdfp1c7hipdbqe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "347175011803-rcnrr7734h44eqnhrf2r1vb0puhtkcm1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.developer.fabian.postBoard"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
