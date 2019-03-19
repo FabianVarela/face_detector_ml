@@ -31,11 +31,18 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Face> _faces;
 
   void _pickImage() async {
-    final imageFile = await ImagePicker.pickImage(source: ImageSource.camera);
-    final image = FirebaseVisionImage.fromFile(imageFile);
+    setState(() {
+      _imageFile = null;
+    });
 
-    final faceDetector = FirebaseVision.instance.faceDetector();
-    final faces = await faceDetector.processImage(image);
+    final imageFile = await ImagePicker.pickImage(source: ImageSource.gallery);
+    dynamic faces;
+
+    if (imageFile != null) {
+      final image = FirebaseVisionImage.fromFile(imageFile);
+      final faceDetector = FirebaseVision.instance.faceDetector();
+      faces = await faceDetector.processImage(image);
+    }
 
     setState(() {
       if (mounted) {
@@ -51,7 +58,12 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: ImageAndFaces(),
+      body: _imageFile == null
+          ? Center(child: Text('No image selected.'))
+          : ImageAndFaces(
+              imageFile: _imageFile,
+              faces: _faces,
+            ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_a_photo),
         onPressed: _pickImage,
