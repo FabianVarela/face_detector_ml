@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final image = FirebaseVisionImage.fromFile(imageFile);
 
     final faceDetector = FirebaseVision.instance.faceDetector();
-    final faces = await faceDetector.detectInImage(image);
+    final faces = await faceDetector.processImage(image);
 
     setState(() {
       if (mounted) {
