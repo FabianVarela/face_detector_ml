@@ -1,16 +1,16 @@
 import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
 
-class FaceDetectorPainter extends CustomPainter {
-  FaceDetectorPainter(this.absoluteImageSize, this.faces);
+class DetectorPainter extends CustomPainter {
+  DetectorPainter(this.imageSize, this.faces);
 
-  final Size absoluteImageSize;
+  final Size imageSize;
   final List<Face> faces;
 
   @override
   void paint(Canvas canvas, Size size) {
-    final double scaleX = size.width / absoluteImageSize.width;
-    final double scaleY = size.height / absoluteImageSize.height;
+    final double scaleX = size.width / imageSize.width;
+    final double scaleY = size.height / imageSize.height;
 
     final Paint paint = Paint()
       ..style = PaintingStyle.stroke
@@ -31,8 +31,7 @@ class FaceDetectorPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(FaceDetectorPainter oldDelegate) {
-    return oldDelegate.absoluteImageSize != absoluteImageSize ||
-        oldDelegate.faces != faces;
+  bool shouldRepaint(DetectorPainter oldDelegate) {
+    return oldDelegate.imageSize != imageSize || oldDelegate.faces != faces;
   }
 }
